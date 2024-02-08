@@ -1,0 +1,162 @@
+@import './MixinsVariables.modules.scss';
+
+
+#root {
+    font-family: "GC";
+}
+
+
+// Listing 
+ul.ListingDetail {
+    list-style: none;
+    list-style-position: outside;
+}
+
+ul.ListingDetail li {
+    word-wrap: break-word; 
+    hyphens: auto;
+}
+
+ul.ListingDetail li::before {
+    content: "→";
+    margin-right: 8px;
+    position: absolute;
+    left: 0; /* Adjust the position as needed */
+}
+
+
+// DESKTOP
+
+@media only screen and (min-width: 700px) {
+
+    .ProductDetailWrapper {
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+        padding-right: 8px;
+
+
+        .ImgSlider {
+            height: 400px;
+            width: 100%;
+
+
+        }
+    }
+
+    .ButtonsWrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .ImageCarousel {
+        grid-area: 2 / 1 / 7 / 2;
+
+        height: 60vh;
+        display: grid;
+        flex-direction: row;
+        gap: 0px;
+        overflow-x: scroll;
+        max-width: 100%;
+
+        ul {
+            list-style: unset;
+            padding: 0;
+
+            li {
+                list-style: none;;
+            }
+        }
+
+        img {
+            height: 100%;
+            object-fit: fill;
+        }
+
+    }
+
+}
+
+// EDIT ITEM PAGE
+
+.FormWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 8px;
+    width: 100%;
+    gap: 8px;
+
+    .FormContent {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+
+
+        .FormItem {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: baseline;
+
+
+            input,
+            textarea {
+                width: 100%;
+                font-family: "GC";
+                height: 32px;
+
+            }
+
+            textarea {
+                height: 15vh;
+            }
+        }
+    }
+
+}
+
+// MOBILE
+@media only screen and (max-width: 700px) {
+    .ProductDetailWrapper {
+        height: auto;
+        overflow-y: scroll;
+    }
+
+    .ImageCarousel {
+        height: 40vh;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        row-gap: 8px;
+        overflow-x: scroll;
+
+  
+
+        img {
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+
+    .ButtonsWrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: left;
+        gap: 8px;
+    }
+
+    .FormWrapper {
+        width: 100%;
+
+        grid-row: 4/11;
+        grid-column: 1/6;
+        padding-inline: 0px;
+    }
+
+}

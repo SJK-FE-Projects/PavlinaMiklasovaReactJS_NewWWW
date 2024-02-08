@@ -1,0 +1,47 @@
+@import './MixinsVariables.modules.scss';
+
+.ImageCarousel {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: fit-content;
+
+
+    li {
+        list-style: none;
+        column-gap:8px;
+        object-fit: fill;
+        height: 100%;
+
+
+    }
+
+    img {
+        height: 100%;
+        object-fit:cover;
+    }
+}
+
+// @media only screen and (max-width: 700px) {
+//     .ImageCarousel {
+//         height: 50vh;
+//         display: flex;
+//         flex-direction: row;
+//         gap: 0px;
+//         overflow-x: scroll;
+
+//         li {
+//             list-style: none;
+//             height: 100%;
+
+//         }
+
+//         img {
+//             height: 100%;
+//             object-fit: fill;
+//         }
+//     }
+// }
