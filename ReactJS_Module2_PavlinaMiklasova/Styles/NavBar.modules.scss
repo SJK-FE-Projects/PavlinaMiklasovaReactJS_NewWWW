@@ -13,19 +13,13 @@
 
 
     h1 {
-        text-align: justify;
-        width: 100%;
         @include H1();
 
 
 
 
     }
-    :after {
-        content: "";
-        display: inline-block;
-        width: 100%;
-      }
+    
       :link {
     text-decoration: none;
     color: black;

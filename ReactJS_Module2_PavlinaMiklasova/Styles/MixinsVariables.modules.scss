@@ -4,11 +4,11 @@
   }
 
 @mixin H1 {
-  text-justify: inter-word;
-  font-size: 9.3vw;
-  text-decoration: none !important;
+  text-justify: justify;
+  text-decoration: none;
   line-height: auto;
   color: $text-color;
+  
   @media only screen and (min-width: 900px) {
     letter-spacing: 0.2vw;
     font-size: 9.3vw;
@@ -26,8 +26,7 @@ h3 {
   line-height: auto;
 
   @media only screen and (min-width: 900px) {
-    letter-spacing: 2.3vw;
-    font-size: 9.3vw;
+    font-size: 2.3vw;
 
   }
   @media only screen and (max-width: 900px) {

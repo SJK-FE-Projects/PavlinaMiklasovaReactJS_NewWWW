@@ -2,11 +2,43 @@
 
 #root {
   font-family: "GC";
-  overflow-x: hidden;
-
+  margin: 0px;
+  position: fixed;
 }
 
-// DESKTOP
+/////////////////////////////////////////////////////////////////  MOBILE
+@media only screen and (max-width: 700px) {
+  .AppWrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto-fill, 10vh);
+    gap: 8px;
+  }
+
+  .NavBarWrapper {
+    grid-row: 1/2;
+    grid-column: 1/6;
+
+  }
+
+  .SideBarWrapper {
+    grid-column:1/6;
+    grid-row: 2/4;
+    overflow-x: scroll;
+  }
+
+  .ProductDetailWrapper {
+    grid-column: 1/6;
+    grid-row: 4/10;
+    max-width: 100%;
+    overflow: auto;
+
+  }
+}
+
+///////////////////////////////////////////////////////////////// DESKTOP
 @media only screen and (min-width: 700px) {
   .AppWrapper {
     width: 100vw;
@@ -14,71 +46,35 @@
     display: grid;
     gap: 8px;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-
-  }
-}
-
-.NavBarWrapper {
-  position: sticky;
-  grid-area: 1 / 1 / 2 / 6;
-}
-
-.SideBarWrapper {
-  grid-area: 2 / 1 / 7 / 2;
-  position: sticky;
-  overflow-y: scroll;
-
-}
-
-.ProductDetailWrapper,
-.FormWrapper {
-  grid-area: 2 / 2 / 7 / 6;
-  position: sticky;
-  max-width: 100%;
-
-}
-
-
-//  MOBILE
-@media only screen and (max-width: 700px) {
-  .AppWrapper {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: repeat(11, 1fr);
-    grid-template-columns: 1fr;
-    grid-row-gap: 8px;
-    gap: 8px;
+    grid-template-rows: 14vw;
 
   }
 
   .NavBarWrapper {
-    // position: sticky;
-    grid-row-start: 1;
-    width: 100%;
-    height: 10vw;
+    top: 0;
+    position: sticky;
+    grid-area: 1 / 1 / 2 / 6;
+
   }
 
   .SideBarWrapper {
-    grid-row: 2/4;
-    grid-column: 1/6;
-    ;
-    width: 100%;
-    height: fit-content;
-    overflow-x: scroll;
+    grid-area: 2 / 1 / 7 / 2;
+    position: sticky;
+
   }
 
   .ProductDetailWrapper {
-    grid-row: 4/12;
-    grid-column: 1/6;
-
+    grid-area: 2 / 2 / 7 / 6;
+    position: sticky;
+    overflow: auto;
 
   }
 }
 
 
-// GENERAL
+
+
+///////////////////////////////////////////////////////////////// GENERAL
 :link {
   text-decoration: none;
   color: black;
