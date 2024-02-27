@@ -29,24 +29,19 @@ ul.ListingDetail li::before {
 
 //////////////////////////////////////////// MOBILE
 @media only screen and (max-width: 700px) {
+
     .ProductDetailWrapper {
+        width: 100%;
         height: auto;
         overflow-y: scroll;
-    }
+        padding-right: 8px;
 
-    .ImageCarousel {
-        height: 40vh;
-        grid-column: 1/6;
-        display: flex;
-        flex-direction: row;
-        row-gap: 8px;
-        overflow-x: scroll;
-        overflow-y: hidden;
-  
 
-        img {
-            height: 100%;
-            object-fit: fill;
+        .ImgSlider {
+            height: 400px;
+            width: 100%;
+
+
         }
     }
 
@@ -54,10 +49,36 @@ ul.ListingDetail li::before {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: left;
-        gap: 8px;
     }
+
+    .ImageCarousel {
+        grid-area: 2 / 1 / 7 / 2;
+
+        height: 60vh;
+        display: grid;
+        flex-direction: row;
+        gap: 0px;
+        overflow-x: scroll;
+        max-width: 100%;
+
+        ul {
+            list-style: unset;
+            padding: 0;
+
+            li {
+                list-style: none;;
+            }
+        }
+
+        img {
+            height: 100%;
+            object-fit: fill;
+        }
+
+    }
+
 
 }
 

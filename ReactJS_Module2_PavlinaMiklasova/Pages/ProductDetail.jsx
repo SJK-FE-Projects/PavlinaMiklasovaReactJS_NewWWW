@@ -40,6 +40,7 @@ function ProductDetail() {
     <div className="ProductDetailWrapper">
       <ImagesSliderDetail className="ImgSlider" />
 
+<div className="ProductDescriptionWrapper">
       {project && <h3>{project.title}</h3>}
       {project && <p>{project.description}</p>}
 {project.accomplishments && 
@@ -62,6 +63,7 @@ function ProductDetail() {
     </ul>
   </>
 }
+</div>
 
 
       <div className="ButtonsWrapper">
