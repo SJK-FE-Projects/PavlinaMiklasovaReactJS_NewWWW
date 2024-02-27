@@ -6,16 +6,21 @@
 
 //////////////////////////////////////////// Listing 
 ul.ListingDetail {
+    color: $text-color;
     list-style: none;
     list-style-position: outside;
 }
 
 ul.ListingDetail li {
+    color: $text-color;
+
     word-wrap: break-word; 
     hyphens: auto;
 }
 
 ul.ListingDetail li::before {
+    color: $text-color;
+
     content: "→";
     margin-right: 8px;
     position: absolute;
