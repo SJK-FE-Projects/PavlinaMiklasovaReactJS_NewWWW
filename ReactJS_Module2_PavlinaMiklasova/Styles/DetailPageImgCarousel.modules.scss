@@ -1,0 +1,62 @@
+@import './MixinsVariables.modules.scss';
+
+
+
+//MOBILE 
+@media only screen and (max-width: 700px) {
+    .ImageCarousel {
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        ul{
+            list-style: none;
+
+        }
+        li {
+            list-style: none;
+            column-gap: 8px;
+            object-fit: fill;
+            height: 100%;
+        }
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+// DESKTOP
+@media only screen and (min-width: 700px) {
+
+    .ImageCarousel {
+        height: 60vh;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        ul{
+            list-style: none;
+
+        }
+        li {
+            list-style: none;
+            column-gap: 8px;
+            object-fit: fill;
+            height: 100%;
+        }
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+

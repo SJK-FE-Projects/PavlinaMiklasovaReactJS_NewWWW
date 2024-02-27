@@ -80,44 +80,7 @@ ul.ListingDetail li::before {
 
 }
 
-// EDIT ITEM PAGE
 
-.FormWrapper {
-    display: flex;
-    flex-direction: column;
-    padding-inline: 8px;
-    width: 100%;
-    gap: 8px;
-
-    .FormContent {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-
-
-
-        .FormItem {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: baseline;
-
-
-            input,
-            textarea {
-                width: 100%;
-                font-family: "GC";
-                height: 32px;
-
-            }
-
-            textarea {
-                height: 15vh;
-            }
-        }
-    }
-
-}
 
 // MOBILE
 @media only screen and (max-width: 700px) {
@@ -133,7 +96,7 @@ ul.ListingDetail li::before {
         flex-direction: row;
         row-gap: 8px;
         overflow-x: scroll;
-
+        overflow-y: hidden;
   
 
         img {
@@ -149,14 +112,6 @@ ul.ListingDetail li::before {
         flex-direction: column;
         justify-content: left;
         gap: 8px;
-    }
-
-    .FormWrapper {
-        width: 100%;
-
-        grid-row: 4/11;
-        grid-column: 1/6;
-        padding-inline: 0px;
     }
 
 }
