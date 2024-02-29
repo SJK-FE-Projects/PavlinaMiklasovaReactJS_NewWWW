@@ -32,6 +32,8 @@ ul.ListingDetail li::before {
         height: auto;
         overflow-y: scroll;
         padding-right: 8px;
+        gap: 8px;
+
 
         .ImgSlider {
             height: 400px;
@@ -53,7 +55,6 @@ ul.ListingDetail li::before {
         height: 40vh;
         display: grid;
         flex-direction: row;
-        gap: 0px;
         overflow-x: scroll;
         max-width: 100%;
 
@@ -74,10 +75,10 @@ ul.ListingDetail li::before {
 @media only screen and (min-width: 700px) {
 
     .ProductDetailWrapper {
-        width: 100%;
+        width: calc(100% - 8px);
         height: auto;
         overflow-y: scroll;
-        padding-right: 8px;
+        margin-right: 8px;
 
 
         .ImgSlider {
@@ -105,6 +106,7 @@ ul.ListingDetail li::before {
         gap: 0px;
         overflow-x: scroll;
         max-width: 100%;
+        margin-right: 8px;
 
       
 
