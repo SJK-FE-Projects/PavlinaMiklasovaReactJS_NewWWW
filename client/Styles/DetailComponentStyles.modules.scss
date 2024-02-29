@@ -1,9 +1,5 @@
 @import './MixinsVariables.modules.scss';
 
-
-
-
-
 //////////////////////////////////////////// Listing 
 ul.ListingDetail {
     color: $text-color;
@@ -13,9 +9,10 @@ ul.ListingDetail {
 
 ul.ListingDetail li {
     color: $text-color;
-
-    word-wrap: break-word; 
+    word-wrap: break-word;
     hyphens: auto;
+    list-style: none;
+
 }
 
 ul.ListingDetail li::before {
@@ -36,12 +33,9 @@ ul.ListingDetail li::before {
         overflow-y: scroll;
         padding-right: 8px;
 
-
         .ImgSlider {
             height: 400px;
             width: 100%;
-
-
         }
     }
 
@@ -56,21 +50,14 @@ ul.ListingDetail li::before {
     .ImageCarousel {
         grid-area: 2 / 1 / 7 / 2;
 
-        height: 60vh;
+        height: 40vh;
         display: grid;
         flex-direction: row;
         gap: 0px;
         overflow-x: scroll;
         max-width: 100%;
 
-        ul {
-            list-style: unset;
-            padding: 0;
-
-            li {
-                list-style: none;;
-            }
-        }
+        
 
         img {
             height: 100%;
@@ -119,14 +106,7 @@ ul.ListingDetail li::before {
         overflow-x: scroll;
         max-width: 100%;
 
-        ul {
-            list-style: unset;
-            padding: 0;
-
-            li {
-                list-style: none;;
-            }
-        }
+      
 
         img {
             height: 100%;
@@ -136,6 +116,3 @@ ul.ListingDetail li::before {
     }
 
 }
-
-
-

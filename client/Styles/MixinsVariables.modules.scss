@@ -1,21 +1,25 @@
 @font-face {
     font-family: "GC";
     src: url("../Assets/gc16_Mono.woff");
+    font-size: 26px;
+
   }
 
 @mixin H1 {
-  text-justify: justify;
+  text-align:justify;
   text-decoration: none;
-  line-height: auto;
   color: $text-color;
   
   @media only screen and (min-width: 900px) {
-    letter-spacing: 0.2vw;
+    letter-spacing: -0.2vw;
     font-size: 9.3vw;
+    line-height: 5vh;
+
 
   }
   @media only screen and (max-width: 900px) {
     font-size: 9vw;
+    line-height: 5vh;
 
   }
 }
@@ -35,9 +39,12 @@ h3 {
   }
 }
 
+@mixin Body-Txt{
+  font-size: 26px;
+}
+
 
 // VAR
 
 $base-color: #fff;
-
 $text-color:#000;

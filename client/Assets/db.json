@@ -7,7 +7,7 @@
       "accomplishments": ["Collaboration, Unstoppable campaign, Inspirations & Innovations Preciosa SS 2022", "Hout couture exhibition", "2020 participant, Internationaal Klompenmuseum Eelde, Netherlands", "Czech Grand Design 2018 nomination, Fashion Design category", "Czech Grand Design 2017 nomination, Fashion Design category", "Diploma Selection 2017 nomination, Designblok - Prague International Design Week", "Collective exhibition + fashion show, Bunka Graduate University Fashion Week, Tokyo 2017", "The heritage fashion show, Fashionclash Festival Maastricht 2016 Best in Design, A winner of the Fashion Design Category Zlín 2016", "A special Award of the Swarovski company, project Nirvana Prague 2013", "Project „Bohemia“ exhibited at Bohemian National Hall New York 2013",  "Best of APLF Awards 2008, bag for Lanificio Bigagli, Hong Kong 2008"],
       "education": ["2015-2017 Master ́s degree program, Academy of Arts, Architecture, and Design in Prague - Fashion and Shoe Design Studio", "2014-2015 Moholy-Nagy University of Art and Design, Budapest, Photography studio", "2012-2016 Bachelor program, Academy of Arts, Architecture, and Design in Prague - Fashion and Shoe Design Studio", "2008-2011 Secondary School of Applied Art Uherske Hradiste - Shoe Design Studio"],
       "contact": "pavlinamiklasoova@gmail.com",
-      "thumbnail": "https://raw.githubusercontent.com/sonali582000/Module2-jsonBackendServer/master/img/SliderSideBar/P0.jpg",
+      "thumbnail": "https://kntbrgxpncm06kwk.public.blob.vercel-storage.com/SideBar/P0-WKbEuyCG3sgk5QdMJ9hYRdgd8BnXTs.jpg",
       "images": [
         {
           "url": "https://raw.githubusercontent.com/sonali582000/Module2-jsonBackendServer/master/img/ProductDetails/P0a.jpg"
@@ -22,10 +22,10 @@
           "url": "https://raw.githubusercontent.com/sonali582000/Module2-jsonBackendServer/master/img/ProductDetails/P0d.jpg"
         },
         {
-          "url": "https://raw.githubusercontent.com/sonali582000/Module2-jsonBackendServer/master/img/ProductDetails/P1b.jpg"
+          "url": "https://kntbrgxpncm06kwk.public.blob.vercel-storage.com/SideBar/P0-WKbEuyCG3sgk5QdMJ9hYRdgd8BnXTs.jpg"
         },
         {
-          "url": "https://raw.githubusercontent.com/sonali582000/Module2-jsonBackendServer/master/img/ProductDetails/P1c.jpg"
+          "url": "https://kntbrgxpncm06kwk.public.blob.vercel-storage.com/SideBar/P0-WKbEuyCG3sgk5QdMJ9hYRdgd8BnXTs.jpg"
         }
       ],
       "credits": "Michal Králíček"
@@ -256,7 +256,7 @@
       "title": "Elastic sandals",
       "description": "Elsa sandals exude simplicity and elegance. The seamless and flexible material conforms to your feet while remaining sturdy and supportive, making them great for full-fledged everyday use.",
       "year": "2015",
-      "thumbnail": "",
+      "thumbnail": "https://kntbrgxpncm06kwk.public.blob.vercel-storage.com/SideBar/P1-NiXsDuFrs2BrpQvhXTNa5HOMghwalX.jpg",
       "images": [
         {
           "url": "https://raw.githubusercontent.com/sonali582000/Module2-jsonBackendServer/master/img/ProductDetails/P6a.jpg"

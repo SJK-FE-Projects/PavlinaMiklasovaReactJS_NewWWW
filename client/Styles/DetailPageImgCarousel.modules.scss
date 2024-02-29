@@ -1,7 +1,5 @@
 @import './MixinsVariables.modules.scss';
 
-
-
 //MOBILE 
 @media only screen and (max-width: 700px) {
     .ImageCarousel {
@@ -12,10 +10,11 @@
         overflow-x: scroll;
         overflow-y: hidden;
 
-        ul{
+        ul {
             list-style: none;
 
         }
+
         li {
             list-style: none;
             column-gap: 8px;
@@ -42,10 +41,11 @@
         overflow-x: scroll;
         overflow-y: hidden;
 
-        ul{
+        ul {
             list-style: none;
 
         }
+
         li {
             list-style: none;
             column-gap: 8px;
@@ -59,4 +59,3 @@
         }
     }
 }
-

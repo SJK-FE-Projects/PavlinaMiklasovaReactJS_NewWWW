@@ -3,9 +3,8 @@
 
 .NavBarWrapper {
     width: 100%;
-    background-color: $base-color;
     text-align: justify;
-    height: 5vw;
+    margin: auto;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -19,14 +18,14 @@
 
 
     }
-    
-      :link {
-    text-decoration: none;
-    color: black;
 
-    :visited {
+    :link {
         text-decoration: none;
         color: black;
+
+        :visited {
+            text-decoration: none;
+            color: black;
+        }
     }
-}
 }
