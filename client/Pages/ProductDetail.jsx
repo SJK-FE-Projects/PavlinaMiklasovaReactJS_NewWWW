@@ -3,38 +3,18 @@ import { AllProjectContext } from "../Contexts/AllProjectsContext";
 import { useContext, useEffect, useState } from "react";
 import "../Styles/DetailComponentStyles.modules.scss";
 
-import axios from "axios";
 import ImagesSliderDetail from "../Components/ImagesSliderDetail";
 import EmailButton from "../Components/MailtoButton";
-// const API_URL = "http://localhost:4000";
 
 function ProductDetail() {
   const { projectId } = useParams();
   const { getOneProduct } = useContext(AllProjectContext);
   const [project, setProject] = useState({});
-  const [addComponent, setaddComponent] = useState(false);
-  const [editComponent, seteditComponent] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     setProject(getOneProduct(projectId));
   }, [projectId]);
 
-  const handleAddClick = () => {
-    setaddComponent(!addComponent);
-  };
-
-  const handleEditClick = () => {
-    seteditComponent(!editComponent);
-  };
-
-  const handleDeleteProject = () => {
-    axios
-      .delete(`${import.meta.env.VITE_API_URL}/projects/${projectId}`)
-      .then(() => {
-        navigate("/");
-      });
-  };
 
   return (
     <div className="ProductDetailWrapper">

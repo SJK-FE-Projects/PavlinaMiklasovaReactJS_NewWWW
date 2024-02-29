@@ -1,14 +1,8 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Carousel } from '@mantine/carousel';
-import { Image } from '@mantine/core';
+import DataSet from '../Assets/db.json';
 
-import "../Styles/ImageCarouselProject.modules.scss"
-
-
-
-// const API_URL = "http://localhost:4000";
+import "../Styles/ImageCarouselProject.modules.scss";
 
 const ImagesSliderDetail = () => {
   const [imageData, setImageData] = useState([]);
@@ -16,37 +10,34 @@ const ImagesSliderDetail = () => {
   const [project, setProject] = useState();
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        // Replace the URL with the actual URL hosting your JSON file
-        const response = await axios.get(`${import.meta.env.VITE_API_URL}/projects/${projectId}`);
+    try {
+      // Find the project from the local dataset
+      const selectedProject = DataSet.projects.find(item => item.id === parseInt(projectId));
 
-        // Check if response.data.projects is an array
-        // Extract images and thumbnails from the API data
-        const extractedData = response.data.images.map((item) => ({
+      if (selectedProject) {
+        // Extract images from the project
+        const extractedData = selectedProject.images.map((item) => ({
           image: item.url,
         }));
-setProject(response.data);
-        // Set the image data state with the array of objects containing thumbnails and images
+        setProject(selectedProject);
         setImageData(extractedData);
-      } catch (error) {
-        console.error("Error fetching data:", error);
+      } else {
+        console.error("Project not found");
       }
-    };
-
-    fetchData();
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   }, [projectId]); // Empty dependency array to run the effect only once on mount
 
   return (
     <div className="ImageCarousel">
-      {project ? (project.images.map((image, index) =>{
+      {project ? (project.images.map((image, index) => {
         return (
           <li key={index} className="ImageItem">
-            <img src={image.url}  alt="img not working"/>
+            <img src={image.url} alt="img not working" />
           </li>
-         
-        )
-      }) ): null}
+        );
+      })) : null}
     </div>
   );
 };
