@@ -14,14 +14,17 @@
   @media only screen and (min-width: 900px) {
     letter-spacing: -0.2vw;
     font-size: 9.4vw;
-    line-height: 10vh;
-
-
+    line-height: 1vh;
+    margin-top: -3vw;
+    @media only screen and (min-width: 1400px) {
+      font-size: 7.4vw;
+      letter-spacing: 0.2vw;
+    }
   }
 
   @media only screen and (max-width: 900px) {
     font-size: 9vw;
-    line-height: 5vh;
+    line-height: 1vh;
     letter-spacing: -0.2vw;
 
 

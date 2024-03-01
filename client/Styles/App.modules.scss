@@ -56,7 +56,7 @@
     display: grid;
     grid-gap: 8px;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(10, 10vh);
+    grid-template-rows: repeat(20, 5vh);
 
   }
 
@@ -71,7 +71,7 @@
 
   .SideBarWrapper {
     position: sticky;
-    grid-row: 3/10;
+    grid-row: 3/18;
     grid-column: 1/2;
 
   }
@@ -80,7 +80,7 @@
 
     position: sticky;
     overflow: auto;
-    grid-row: 3/10;
+    grid-row: 3/18;
     grid-column: 2/7;
     
   }
