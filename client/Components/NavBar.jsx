@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <div className="NavBarWrapper">
       <Link to={`/`}>
-        <h1><p>Pavlina</p><p>Miklasova</p> </h1>
+        <h1><p>Pavlina</p><p>Miklasova</p></h1>
       </Link>
     </div>
   );
