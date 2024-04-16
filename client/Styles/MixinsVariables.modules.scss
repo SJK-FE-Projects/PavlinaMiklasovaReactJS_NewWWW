@@ -34,7 +34,8 @@
 h3 {
   font-size: 2.3vw;
   text-decoration: none !important;
-  line-height: auto;
+  line-height: 105%;
+  letter-spacing: -5%;
 
   @media only screen and (min-width: 900px) {
     font-size: 2.3vw;
@@ -42,13 +43,15 @@ h3 {
   }
 
   @media only screen and (max-width: 900px) {
-    font-size: 4.9vw;
+    font-size: 4.3vw;
 
   }
 }
 
 @mixin Body-Txt {
-  font-size: 32px;
+  font-size: 20px;
+  line-height: 115%;
+  word-spacing: -5%;
 }
 
 

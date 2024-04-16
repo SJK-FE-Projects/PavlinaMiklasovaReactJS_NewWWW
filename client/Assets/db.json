@@ -392,34 +392,6 @@
         }
       ],
       "credits": ""
-    },
-    {
-      "id": 9,
-      "title": "Elastic sandals",
-      "description": "Elsa sandals exude simplicity and elegance. The seamless and flexible material conforms to your feet while remaining sturdy and supportive, making them great for full-fledged everyday use.",
-      "year": "2015",
-      "thumbnail": "https://kntbrgxpncm06kwk.public.blob.vercel-storage.com/SideBar/P1-NiXsDuFrs2BrpQvhXTNa5HOMghwalX.jpg",
-      "images": [
-        {
-          "url": "https://raw.githubusercontent.com/sonali582000/Module2-jsonBackendServer/master/img/ProductDetails/P6a.jpg"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/sonali582000/Module2-jsonBackendServer/master/img/ProductDetails/P6b.jpg"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/sonali582000/Module2-jsonBackendServer/master/img/ProductDetails/P6c.jpg"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/sonali582000/Module2-jsonBackendServer/master/img/ProductDetails/P0a.jpg"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/sonali582000/Module2-jsonBackendServer/master/img/ProductDetails/P7c.jpg"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/sonali582000/Module2-jsonBackendServer/master/img/ProductDetails/P7b.jpg"
-        }
-      ],
-      "credits": ""
     }
   ]
 }

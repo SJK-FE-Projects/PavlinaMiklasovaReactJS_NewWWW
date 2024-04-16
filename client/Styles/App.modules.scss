@@ -4,7 +4,7 @@
 
   font-family: "GC";
   position: fixed;
-  font-size: 17px;
+	@include Body-Txt;
   hyphens: auto;
   text-justify: inter-word;
       box-sizing: border-box;

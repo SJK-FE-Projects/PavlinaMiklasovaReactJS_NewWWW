@@ -1,29 +1,5 @@
 @import './MixinsVariables.modules.scss';
 
-//////////////////////////////////////////// Listing 
-ul.ListingDetail {
-    color: $text-color;
-    list-style: none;
-    list-style-position: outside;
-}
-
-ul.ListingDetail li {
-    color: $text-color;
-    word-wrap: break-word;
-    hyphens: auto;
-    list-style: none;
-
-}
-
-ul.ListingDetail li::before {
-    color: $text-color;
-
-    content: "→";
-    margin-right: 8px;
-    position: absolute;
-    left: 0;
-}
-
 //////////////////////////////////////////// MOBILE
 @media only screen and (max-width: 700px) {
 
@@ -114,7 +90,26 @@ ul.ListingDetail li::before {
             height: 100%;
             object-fit: fill;
         }
-
     }
+}
 
+//////////////////////////////////////////// Listing 
+ul.ListingDetail {
+    color: $text-color;
+    list-style: none;
+    // list-style-position: outside;
+}
+
+ul.ListingDetail li {
+    color: $text-color;
+    word-wrap: break-word;
+    hyphens: auto;
+    list-style: none;
+}
+
+ul.ListingDetail li::before {
+    color: $text-color;
+    content: "→";
+    position: absolute;
+    left: 0;
 }
