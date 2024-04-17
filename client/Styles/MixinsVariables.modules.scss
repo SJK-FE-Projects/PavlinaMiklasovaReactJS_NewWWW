@@ -24,9 +24,9 @@
   }
 
   @media only screen and (max-width: 900px) {
-    font-size: 9vw;
+    font-size: 9.5vw;
     line-height: 1vh;
-    letter-spacing: 0.2vw;
+    letter-spacing: -0.2vw;
 
 
   }
@@ -40,12 +40,12 @@ h3 {
   font-weight: normal;
 
   @media only screen and (min-width: 900px) {
-    font-size: 2.3vw;
+    font-size: 3.3vw;
 
   }
 
   @media only screen and (max-width: 900px) {
-    font-size: 4.6vw;
+    font-size: 5.3vw;
 
   }
 }
@@ -54,12 +54,12 @@ h3 {
   line-height: 117.5%;
   word-spacing: -7%;
   @media only screen and (min-width: 900px) {
-    font-size: 20px;
+    font-size: 1.3em;
 
   }
 
   @media only screen and (max-width: 900px) {
-    font-size: 15px;
+    font-size: 1em;
 
   }
 }
