@@ -10,6 +10,7 @@
   margin: auto;
   text-decoration: none;
   color: $text-color;
+  font-weight: normal;
 
   @media only screen and (min-width: 900px) {
     letter-spacing: -0.2vw;
@@ -36,6 +37,7 @@ h3 {
   text-decoration: none !important;
   line-height: 105%;
   letter-spacing: -5%;
+  font-weight: normal;
 
   @media only screen and (min-width: 900px) {
     font-size: 2.3vw;
@@ -43,15 +45,23 @@ h3 {
   }
 
   @media only screen and (max-width: 900px) {
-    font-size: 4.3vw;
+    font-size: 4.6vw;
 
   }
 }
 
 @mixin Body-Txt {
-  font-size: 20px;
-  line-height: 115%;
-  word-spacing: -5%;
+  line-height: 117.5%;
+  word-spacing: -7%;
+  @media only screen and (min-width: 900px) {
+    font-size: 20px;
+
+  }
+
+  @media only screen and (max-width: 900px) {
+    font-size: 15px;
+
+  }
 }
 
 
