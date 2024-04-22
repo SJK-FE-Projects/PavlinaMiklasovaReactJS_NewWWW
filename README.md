@@ -1,2 +1,2 @@
 # PavlinaMiklasovaReactJS_NewWWW
-v2
+Website Project for Pavlina Miklasova. Media storage on Github.
