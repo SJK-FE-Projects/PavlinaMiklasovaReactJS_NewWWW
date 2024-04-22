@@ -132,3 +132,9 @@ dist
 .DS_Store
 .vscode
 .vite
+vite.config.js
+node_modules
+package-json.lock
+package.json
+.eslintrc.cjs
+.env
