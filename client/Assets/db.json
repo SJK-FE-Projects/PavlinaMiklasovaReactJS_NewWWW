@@ -24,7 +24,7 @@
 				"2008-2011 Secondary School of Applied Art Uherske Hradiste - Shoe Design Studio"
 			],
 			"contact": "pavlinamiklasoova@gmail.com",
-			"thumbnail": "./media/web/P0.jpg",
+			"thumbnail": "https://raw.githubusercontent.com/SJK-FE-Projects/PavlinaMiklasova_NewWebsite/main/client/media/web/P0.jpg",
 			"images": [
 				{
 					"url": "media/Pavlina/P1.jpg"
